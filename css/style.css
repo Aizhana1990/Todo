@@ -1,8 +1,11 @@
-*{
-    background-color: paleturquoise;
+body{
+    background: url("../images/foto3.jpg") no-repeat center/cover;
+    min-height: 100vh;
+    font-family: 'Source Serif Pro', serif;
 }
 .title{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #e9ecef;
 }

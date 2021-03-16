@@ -17,10 +17,9 @@ function getTodos() {
     return JSON.parse(localStorage.getItem('todos')) || []
 }
 
-
 function addTodo() {
-    let newTodo = todoName.value
-    if (newTodo.length > 0) {
+    let newTodo = todoName.value // записываем в переменную value инпута
+    if (newTodo.length > 0) { // если значение инпута больше 0, то можно добавлять
         let todos = getTodos()
         todos = [...todos, newTodo]
         localStorage.setItem('todos', JSON.stringify(todos))
